@@ -14,18 +14,24 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.99.35.184
   environments:
   - key: dev
+    owner: martin-noretoft
+    repository: expert-dollop
   - key: staging
   - key: production
   ingress:
     domain: ""
     externalDNS: false
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: martin-noretoft
   repository: bucketrepo
   secretStorage: local
   vault: {}
