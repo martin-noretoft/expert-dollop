@@ -8,7 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
-    - name: php
+    - name: phpnew
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
